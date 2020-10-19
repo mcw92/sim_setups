@@ -36,7 +36,7 @@ rank = MPI.COMM_WORLD.Get_rank()
 # Parameters to set by user depending on optimization problem and (HPC) system:
 block_size           = 100                # block size (block = 1 dyn. PSO sim. node + workers)
 num_particles        = 1                  # number of (local) particles per block (never change this)
-num_generations      = 25                 # number of generations (iterations per particle)
+num_generations      = 15                 # number of generations (iterations per particle)
 num_particles_global = size // block_size # number of particles in swarm
 WS_path              = sys.argv[1]        # path to permanent workspace /pfs/work6/workspace/scratch/ku4408-LAO_ha-0/setup/ 
 ws_path              = sys.argv[2]        # path to temporary job BeeOND file system
